@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1024, initial-scale=0.67, maximum-scale=1, user-scalable=no" />
+  <title>ThoughtNest – A Full-Stack Blogging Platform</title>
+  <link rel="stylesheet" href="style/thoughtnest.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="global.css">
+  <style>
+    body {
+      overscroll-behavior: none;
+    }
+
+    @media screen and (min-width: 769px) {
+      #rotate-notice,
+      .landscape-warning,
+      .portrait-warning {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="rotate-notice">
+  Please rotate your device to landscape mode to view this portfolio properly.
+</div>
+
+  <header class="projects-header">
+  <a href="index.html" class="logo">Harinee Anandh</a>
+  <div class="right-links">
+    <a href="contact.html" class="contact-link">Contact</a>
+
+    <a href="https://www.linkedin.com/in/harinee-anandh-327992173/" target="_blank" class="linkedin-icon" aria-label="LinkedIn">
+       <img src="assets/linkedin.png" alt="GitHub" width="24" height="24" style="margin-left: 8px;" />
+      </svg>
+    </a>
+
+    <a href="https://github.com/Harineeanandh" target="_blank" class="linkedin-icon" aria-label="GitHub">
+      <img src="assets/github.png" alt="GitHub" width="24" height="24" style="margin-left: 8px;" />
+    </a>
+  </div>
+</header>
+  <div id="main-content">
+  <main class="project-content">
+    <section class="project-tile">
+      <h2>ThoughtNest – A Full-Stack Blogging Platform</h2>
+      <p><strong>by Harinee Anandh</strong></p>
+
+      <h3>🔗 Project Links</h3>
+      <ul>
+        <li><strong>Live App:</strong> <a href="https://thoughnest-frontend.vercel.app/" target="_blank">https://thoughtnest.vercel.app</a></li>
+        <li><strong>GitHub Repository:</strong> <a href="https://github.com/Harineeanandh/ThoughtNest" target="_blank">https://github.com/Harineeanandh/ThoughtNest</a></li>
+      </ul>
+
+      <h3>🚀 Overview</h3>
+      <p>ThoughtNest is a full-stack blogging platform that I designed, built, tested, and deployed entirely on my own. What began as a personal project evolved into a production-ready product with scalable architecture, strong security, CI/CD pipelines, and a polished, responsive UI.</p>
+      <p>From backend services and database modeling to frontend UX and cloud deployment, I treated this project like a real-world SaaS — with zero shortcuts. Every part of the system is owned, engineered, and maintained by me.</p>
+
+      <h3>⚙️ Tech Stack & Infrastructure</h3>
+      <h4>Backend</h4>
+      <ul>
+        <li>Spring Boot (layered architecture, REST APIs)</li>
+        <li>Hibernate (ORM and transaction management)</li>
+        <li>PostgreSQL (hosted on Render)</li>
+        <li>H2 (in-memory DB for integration tests)</li>
+        <li>JUnit 5 + MockMvc (unit and integration testing)</li>
+        <li>JWT-based authentication with secure filters</li>
+        <li>DTOs for clean data exposure</li>
+        <li>Dockerized and deployed on Google Cloud Run</li>
+      </ul>
+      <h4>Frontend</h4>
+      <ul>
+        <li>React + Vite (fast, modular SPA)</li>
+        <li>Tailwind CSS (responsive UI design)</li>
+        <li>Quill.js (rich text editor with embedded image support)</li>
+        <li>Auth state + API integration with token handling</li>
+        <li>Hosted on Vercel for global, always-on access</li>
+      </ul>
+      <h4>DevOps & Tools</h4>
+      <ul>
+        <li>Docker (consistent local + cloud builds)</li>
+        <li>GitHub Actions (CI pipeline with test + build steps)</li>
+        <li>curl & Postman (live API testing)</li>
+        <li>Chrome/Firefox DevTools, VS Code (debugging & dev)</li>
+      </ul>
+
+      <h3>✅ Core Features</h3>
+      <h4>🔐 Authentication</h4>
+      <ul>
+        <li>JWT-based login & registration</li>
+        <li>Secure password hashing with BCrypt</li>
+        <li>Route protection based on user roles</li>
+        <li>Token expiration + verification handling</li>
+        <li>Global auth state management on frontend</li>
+      </ul>
+      <h4>📝 Article Management</h4>
+      <ul>
+        <li>Create, edit (PATCH), publish/unpublish, delete articles</li>
+        <li>Embedded images via Quill.js editor</li>
+        <li>lastModifiedDate field tracking</li>
+        <li>Full-text search, filtering & pagination</li>
+        <li>DTOs protect internal entity structures</li>
+      </ul>
+      <h4>🖼️ Cloud Image Uploads</h4>
+      <ul>
+        <li>Upload images from editor directly to Google Cloud Storage</li>
+        <li>JWT-secured upload endpoint with method-level validation</li>
+        <li>Integrated into the editor for seamless UX</li>
+      </ul>
+      <h4>📊 Dashboard & UI</h4>
+      <ul>
+        <li>Personalized dashboard for article authors</li>
+        <li>Featured article carousel on homepage</li>
+        <li>Reusable UI components: modals, toasts, loaders</li>
+        <li>Landscape-only mobile layout for a "mini desktop" feel</li>
+        <li>Zoomed styling on forms for mobile UX consistency</li>
+      </ul>
+
+      <h3>🧪 Testing Strategy</h3>
+      <p>Testing was a core priority. I focused on creating a stable, production-grade backend with complete confidence.</p>
+      <h4>Unit & Integration Tests</h4>
+      <ul>
+        <li>JUnit 5 for service-layer testing (auth, article ops, exception handling)</li>
+        <li>MockMvc + H2 for isolated controller tests</li>
+        <li>Hibernate used with H2 to simulate realistic data access</li>
+        <li>DTO-based assertions to verify response integrity</li>
+      </ul>
+      <h4>Manual API Testing</h4>
+      <ul>
+        <li>curl used for token handling, CORS, and edge case testing</li>
+        <li>Live endpoints tested post-deployment on GCP</li>
+        <li>Typical cases tested:
+          <ul>
+            <li>POST /api/articles with JWT</li>
+            <li>GET /api/articles/{id} (public access)</li>
+            <li>PATCH /api/articles/{id}</li>
+            <li>DELETE /api/articles/{id} (with/without token)</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>🔍 Key Decisions</h3>
+      <h4>Why Hibernate?</h4>
+      <p>Hibernate enabled me to avoid boilerplate SQL while managing complex DB relationships through annotations like @Entity, @OneToMany, and transaction boundaries in service methods. It streamlined data access and kept repository code concise (findByTitle(), deleteById()).</p>
+      <h4>Why H2 for Testing?</h4>
+      <p>H2’s in-memory design made it ideal for fast, isolated integration tests. Combined with Hibernate, it automatically validated my DB schema and controller behavior — without touching production data.</p>
+
+      <h3>🔐 Security Highlights</h3>
+      <ul>
+        <li>Secure JWT auth filters (custom)</li>
+        <li>Passwords hashed using Spring Security's BCrypt encoder</li>
+        <li>Global exception handler to hide internal stack traces</li>
+        <li>Explicit CORS setup for frontend/backend separation</li>
+        <li>All secrets & credentials stored via environment variables</li>
+        <li>DTO usage to prevent direct exposure of entity models</li>
+      </ul>
+
+      <h3>🛠️ Infrastructure</h3>
+      <ul>
+        <li>Dockerized backend + frontend for repeatable builds</li>
+        <li>Google Cloud Run (serverless backend with autoscaling)</li>
+        <li>Vercel (blazing-fast frontend with instant rollbacks)</li>
+        <li>PostgreSQL (hosted on Render, in same region as backend)</li>
+        <li>GitHub Actions (CI pipeline: build, test, deploy trigger-ready)</li>
+      </ul>
+
+      <h3>💡 Key Learnings</h3>
+      <ul>
+        <li>Building production-ready full-stack systems — not toy apps</li>
+        <li>Diagnosing cloud-specific bugs using GCP logs</li>
+        <li>Creating testable, secure backend code with Hibernate, DTOs, and JUnit</li>
+        <li>Responsive design across devices using Tailwind</li>
+        <li>API validation using curl, outside dev environments</li>
+        <li>Building and deploying with containerization</li>
+        <li>CI/CD workflows and DevOps principles</li>
+      </ul>
+
+      <h3>🤛 Real-World Challenges I Solved</h3>
+      <p><strong>JDBC + Cloud Run</strong><br>Faced <em>Unable to commit against JDBC Connection</em> error in production.<br>→ Fixed by tuning HikariCP settings and adding explicit transaction boundaries in service methods.</p>
+      <p><strong>Secure Image Uploads (Quill.js + GCS)</strong><br>→ Handled signed uploads, file presence validation, malformed requests, and direct storage to GCS using a custom service.</p>
+      <p><strong>Toast Notifications Not Showing</strong><br>→ Diagnosed missing global container and unhandled promises. Fixed with a centralized <code>toastError()</code> utility and fallback logic.</p>
+      <p><strong>Mobile Viewport Scaling</strong><br>→ Built a landscape-only layout with global overlays, scale transforms, and tested extensively with Chrome & Firefox dev tools.</p>
+
+      <h3>🌟 Final Outcome</h3>
+      <p>ThoughtNest is now a secure, fully deployed blogging platform that:</p>
+      <ul>
+        <li>Authenticates users and handles rich article content</li>
+        <li>Supports cloud-based image storage</li>
+        <li>Provides real-time validation via integration tests + curl</li>
+        <li>Scales with cloud-native infrastructure</li>
+        <li>Demonstrates deep backend fluency and full-stack ownership</li>
+      </ul>
+
+      <h3>🚨 What’s Next</h3>
+      <ul>
+        <li>🔄 CD: Auto-deploy to GCP + Vercel on every push</li>
+        <li>❤️ Likes, views & comment features for engagement</li>
+        <li>📊 Analytics dashboard for user insights</li>
+        <li>✉️ Email notifications for contact submissions</li>
+        <li>🔒 Security Upgrades: Login attempt limiting, 2FA, Google OAuth</li>
+      </ul>
+
+      <h3>📝 Personal Note</h3>
+      <p>This project — from the first line of code to the final deployment — was built and maintained solely by me, Harinee Anandh. It reflects not only my technical skills, but my obsession with polish, my eye for UX, and my dedication to building meaningful, complete software.</p>
+      <p><em>Please do not copy or reuse this project. ThoughtNest is original work built with months of thought, care, and craft.</em></p>
+    </section>
+  </main>
+  </div>
+</body>
+</html>

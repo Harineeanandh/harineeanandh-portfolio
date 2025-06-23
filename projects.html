@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1024, initial-scale=0.6, maximum-scale=1, user-scalable=no" />
+  <title>Projects – Harinee Anandh</title>
+  <link rel="stylesheet" href="style/project.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cormorant+Garamond:wght@600&family=Forum&family=Marcellus&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <style>
+    body {
+      overscroll-behavior: none;
+    }
+
+    @media screen and (min-width: 769px) {
+      #rotate-notice,
+      .landscape-warning,
+      .portrait-warning {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="rotate-notice">
+  Please rotate your device to landscape mode to view this portfolio properly.
+</div>
+  <header class="projects-header">
+  <a href="index.html" class="logo">Harinee Anandh</a>
+  <div class="right-links">
+    <a href="contact.html" class="contact-link">Contact</a>
+
+    <a href="https://www.linkedin.com/in/harinee-anandh-327992173/" target="_blank" class="linkedin-icon" aria-label="LinkedIn">
+       <img src="assets/linkedin.png" alt="GitHub" width="24" height="24" style="margin-left: 8px;" />
+      </svg>
+    </a>
+
+    <a href="https://github.com/Harineeanandh" target="_blank" class="linkedin-icon" aria-label="GitHub">
+      <img src="assets/github.png" alt="GitHub" width="24" height="24" style="margin-left: 8px;" />
+    </a>
+  </div>
+</header>
+
+  <div id="main-content">
+  <main class="projects-container">
+    <h1 class="projects-title">Projects I've done so far ✨</h1>
+
+    <section class="project-tile">
+      <h2 class="project-title">
+        <img src="assets/frontend.png" alt="API Icon" />
+        ThoughtNest - A Full-Stack Blog Application
+      </h2>
+      <p>A platform where users can write, publish, and manage articles with rich text and images. Built with Spring Boot, React, and PostgreSQL, and deployed on Google Cloud Run and Vercel.</p>
+      <a href="thoughtnest.html" class="know-more">Know More →</a>
+    </section>
+    
+    <section class="project-tile">
+      <h2 class="project-title">
+        <img src="assets/bar-graph.png" alt="Chart Icon" />
+        Pepsico Advanced Software Engineering Job Simulation
+      </h2>
+      <p>Built a responsive dashboard to analyze company metrics using SQL, Tableau, and Excel as part of the PwC job simulation.</p>
+      <a href="pepsico.html" class="know-more">Know More →</a>
+    </section>
+
+    <section class="project-tile">
+      <h2 class="project-title">
+        <img src="assets/backend.png" alt="Segmentation Icon" />
+        HPE Software Engineering Job Simulation
+      </h2>
+      <p>Built a production-ready RESTful web service using Java Spring Boot to manage employee data with full CRUD operations. Implemented unit tests, Swagger documentation, and deployed the API securely on Google Cloud Run.</p>
+      <a href="hpe-sim.html" class="know-more">Know More →</a>
+    </section>
+
+    <section class="project-tile">
+      <h2 class="project-title">
+        <img src="assets/portfolio.png" alt="Documentation Icon" />
+        My Portfolio
+      </h2>
+      <p>A custom-built, fully responsive developer portfolio created using only HTML and CSS, with no templates or frameworks. It showcases my projects, skills, and personality, with a functional contact form and automated GitHub Pages deployment.</p>
+      <a href="portfolio.html" class="know-more">Know More →</a>
+    </section>
+  </main>
+  </div>
+</body>
+</html>

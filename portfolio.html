@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1024, initial-scale=0.67, maximum-scale=1, user-scalable=no" />
+  <title>🖥️ My Developer Portfolio Website</title>
+  <link rel="stylesheet" href="style/thoughtnest.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="global.css">
+  <style>
+    body {
+      overscroll-behavior: none;
+    }
+
+    @media screen and (min-width: 769px) {
+      #rotate-notice,
+      .landscape-warning,
+      .portrait-warning {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="rotate-notice">
+    Please rotate your device to landscape mode to view this portfolio properly.
+  </div>
+
+  <header class="projects-header">
+    <a href="index.html" class="logo">Harinee Anandh</a>
+    <div class="right-links">
+      <a href="contact.html" class="contact-link">Contact</a>
+      <a href="https://www.linkedin.com/in/harinee-anandh-327992173/" target="_blank" class="linkedin-icon" aria-label="LinkedIn">
+        <img src="assets/linkedin.png" alt="LinkedIn" width="24" height="24" style="margin-left: 8px;" />
+      </a>
+      <a href="https://github.com/Harineeanandh" target="_blank" class="linkedin-icon" aria-label="GitHub">
+        <img src="assets/github.png" alt="GitHub" width="24" height="24" style="margin-left: 8px;" />
+      </a>
+    </div>
+  </header>
+
+  <div id="main-content">
+    <main class="project-content">
+      <section class="project-tile">
+        <h2>🖥️ My Developer Portfolio Website</h2>
+        <p><strong>by Harinee Anandh</strong></p>
+
+        <h3>🔗 Project Links</h3>
+        <ul>
+          <li><strong>Live Site:</strong> <a href="https://harineeanandh.github.io" target="_blank">harineeanandh.github.io</a></li>
+          <li><strong>GitHub Repo:</strong> <a href="https://github.com/Harineeanandh/harineeanandh.github.io" target="_blank">github.com/Harineeanandh/harineeanandh.github.io</a></li>
+        </ul>
+
+        <h3>🚀 Overview</h3>
+        <p>This is my personal developer portfolio — a fully responsive, minimal site built entirely with HTML and CSS, designed to showcase my skills, projects, and personality. I built this from scratch with a strong focus on accessibility, mobile-first design, and semantic HTML — without relying on JavaScript frameworks or any pre-built templates.</p>
+        <p>The goal: create a site that is clean, professional, and easy to navigate across all devices, while staying lightweight and performant.</p>
+
+        <h3>⚙️ Tech Stack & Highlights</h3>
+        <ul>
+          <li>HTML5 – Semantic markup across all sections</li>
+          <li>CSS3 – Global, modular styles with responsive layout</li>
+          <li>Media Queries – Adaptive scaling across mobile and desktop</li>
+          <li>Google Fonts – Modern typography with Quicksand & La Belle Aurore</li>
+          <li>Formspree – For functional contact form submissions</li>
+          <li>GitHub Pages – Deployed via GitHub Actions on every push to master</li>
+        </ul>
+
+        <h3>✅ Features</h3>
+        <ul>
+          <li><strong>📱 Mobile-First Layout</strong><br>Optimized for all screen sizes, with a custom landscape-only layout on mobile to maintain desktop-like consistency.</li>
+          <li><strong>🖼️ Project Showcase Pages</strong><br>Dedicated HTML pages for each project with a description, tech stack, and live/demo links.</li>
+          <li><strong>📬 Functional Contact Form</strong><br>Real submission powered by Formspree (with spam protection notice).</li>
+          <li><strong>🌐 Global Styles + Orientation Prompts</strong><br>A central global.css handles zoom, orientation warnings, and consistent layout.</li>
+          <li><strong>🔒 Minimal JavaScript Usage</strong><br>No JS dependencies — just one optional script to toggle contact details.</li>
+        </ul>
+
+        <h3>🧪 Testing & Deployment</h3>
+        <ul>
+          <li>Manual Testing across Chrome, Firefox, Safari</li>
+          <li>Viewports: 1024px+, 768px, 480px (landscape + portrait)</li>
+          <li>Automated Deployment via GitHub Actions on every commit to master</li>
+        </ul>
+
+        <h3>✨ Unique Touches</h3>
+        <ul>
+          <li>Custom mobile landscape prompt</li>
+          <li>Accessibility-aware layout with zoomable UI</li>
+          <li>Personal branding through clean icons and consistent typography</li>
+          <li>No third-party templates — everything authored from scratch</li>
+        </ul>
+
+        <h3>💡 Key Learnings</h3>
+        <ul>
+          <li>Designing mobile-first for real-world usability</li>
+          <li>Deploying static sites with GitHub Pages + GitHub Actions</li>
+          <li>Structuring and maintaining global CSS across multiple HTML pages</li>
+          <li>Prioritizing clarity, accessibility, and minimalism in frontend development</li>
+        </ul>
+
+        <h3>🌟 Final Outcome</h3>
+        <p>This portfolio serves as a professional, lightweight, and fully custom representation of who I am as a developer. It allows recruiters, collaborators, and visitors to:</p>
+        <ul>
+          <li>Learn about me and my background</li>
+          <li>Browse my key projects</li>
+          <li>Reach out via a functional contact form</li>
+          <li>Get a clear sense of my attention to detail and frontend sensibility</li>
+        </ul>
+
+        <h3>📝 Personal Note</h3>
+        <p>This site is more than just a collection of links — it’s a live, evolving reflection of who I am as a developer. Every page, style, and detail was created with care and intention. I wanted this portfolio to feel like me: thoughtful, polished, and full of potential.</p>
+        <p><em>Please do not reuse or copy this portfolio without permission. It is original work, created and maintained with love by me — Harinee Anandh.</em></p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

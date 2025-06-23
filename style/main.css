@@ -1,0 +1,243 @@
+/* Background GIF */
+.background-gif {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+background: linear-gradient(to right, #f8dde9, #e8d7f1);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* General styles */
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  color: #222; /* Darker base text */
+}
+
+.social-icons {
+  position: fixed;
+  top: 20px;
+  left: 25px;
+  display: flex;
+  flex-direction: row; 
+  gap: 14px;
+  z-index: 999;
+}
+
+
+.social-icon {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.15);
+}
+
+
+/* Navigation bar */
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 25px 35px;
+  font-weight: bold;
+  position: relative;  
+  z-index: 10;         
+}
+
+.nav-links a {
+  font-size: medium;
+  margin-left: 20px;
+  color: #8c0542;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.intro-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 40px 10%; /* was 60px before – reduced top padding */
+  gap: 30px;
+  text-align: left;
+  animation: fadeInUp 1.2s ease-out both;
+  margin-top: -60px;
+}
+
+
+.cloud-box {
+  background-color: white;
+  border: 4px solid #d63384;
+  border-radius: 60% / 40%;
+  padding: 40px;
+  max-width: 800px;
+  box-shadow: 0 10px 30px rgba(214, 51, 132, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 1000%;
+  object-fit: cover;
+  border: 4px solid #d63384;
+}
+
+.intro h1 {
+  font-size: 2em;
+  margin: 0 0 10px;
+  color: #111; /* Darker heading */
+}
+
+.intro p {
+  max-width: 500px;
+  line-height: 1.6;
+  margin: 0;
+  color: #111; /* Also darkened the paragraph */
+}
+
+/* Resume button */
+.resume-button {
+  margin-top: 20px;
+}
+
+.button {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #d63384;
+  color: white;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+
+.button:hover {
+  background-color: #b72a6a;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(214, 51, 132, 0.4);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Subtle zoom-in on scroll for the intro section */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* --- Decorative Additions --- */
+
+/* Floating decorative blobs */
+.floating-circles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -2;
+  overflow: hidden;
+}
+
+.floating-circles span {
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  opacity: 0.4;
+  animation: floatBlob 20s linear infinite;
+}
+
+.floating-circles span:nth-child(1) {
+  width: 150px;
+  height: 150px;
+  background: #ffb6c1;
+  left: 10%;
+  top: 30%;
+  animation-duration: 25s;
+}
+
+.floating-circles span:nth-child(2) {
+  width: 100px;
+  height: 100px;
+  background: #e0bbff;
+  left: 70%;
+  top: 50%;
+  animation-duration: 20s;
+}
+
+.floating-circles span:nth-child(3) {
+  width: 120px;
+  height: 120px;
+  background: #bae1ff;
+  left: 40%;
+  top: 10%;
+  animation-duration: 30s;
+}
+
+@keyframes floatBlob {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-40px) scale(1.05);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Optional dotted divider */
+.dotted-divider {
+  border: none;
+  border-top: 2px dotted #d63384;
+  margin: 40px 0;
+  width: 60%;
+}
+
+.coder-icon {
+  display: inline-block;
+  width: 63px;
+  height: 63px;
+  background: url('../assets/coder.png') no-repeat center center;
+  background-size: contain;
+  margin-left: 10px;
+  animation: none;
+}

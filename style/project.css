@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  color: #222;
+  position: relative;
+  overflow-x: hidden;
+  background: linear-gradient(to right, #f8dde9, #e8d7f1);
+}
+
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Header */
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-family: 'La Belle Aurore', cursive;
+  font-size: 1.75rem;
+  font-weight:bolder;
+  color: #aa1a9b; 
+  font-weight: normal;
+  letter-spacing: 0.6px;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.logo:hover {
+  opacity: 0.85;
+}
+
+.right-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.contact-link {
+  text-decoration: none;
+  color:#b51868; 
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.linkedin-icon svg {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease;
+  fill: #3d2ab7;
+
+}
+
+
+/* Section heading */
+.section-heading {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin: 50px 0 30px;
+  color: #a100cf;
+  background: -webkit-linear-gradient(45deg, #a100cf, #ff00c8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Grid-based layout */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 10fr));
+  gap: 30px;
+  padding: 0 30%;
+  margin-bottom: 80px;
+}
+
+/* Project tile */
+.project-tile {
+  background: #f7e5f4;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 30px 35px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+.projects-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #b51868; 
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.project-tile:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.12);
+}
+
+/* Project title with icon */
+.project-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3c0071;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.project-title img {
+  width: 28px;
+  height: 28px;
+}
+
+/* Description */
+.project-tile p {
+  font-size: 1rem;
+  margin: 8px 0 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Know More */
+.know-more {
+  display: inline-block;
+  color: #a100cf;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.know-more:hover {
+  color: #5802ed;
+  text-decoration: underline;
+}
+
+/* Background pastel blobs */
+.bg-decor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.ball {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.4;
+  animation: float 20s ease-in-out infinite;
+}
+
+.pink {
+  width: 300px;
+  height: 300px;
+  background: #f6d0e5;
+  top: 10%;
+  left: 20%;
+}
+
+.blue {
+  width: 250px;
+  height: 250px;
+  background: #bce8f7;
+  bottom: 15%;
+  right: 25%;
+}
+
+.purple {
+  width: 200px;
+  height: 200px;
+  background: #b78dee;
+  top: 50%;
+  right: 10%;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  50% {
+    transform: translateY(-30px) translateX(20px);
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .projects-container {
+    padding: 0 20px;
+    gap: 30px;
+  }
+
+  .projects-header {
+    padding: 20px;
+  }
+
+  .project-title {
+    font-size: 1.3rem;
+  }
+
+  .project-title img {
+    width: 24px;
+    height: 24px;
+  }
+}

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(to bottom right, #eaf0ff, #fde6f7);
+  overflow-x: hidden;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  50% {
+    transform: translateY(-30px) translateX(20px);
+  }
+}
+
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-family: 'La Belle Aurore', cursive;
+  font-size: 1.75rem;
+  font-weight:bolder;
+  color: #aa1a9b; 
+  font-weight: normal;
+  letter-spacing: 0.6px;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.logo:hover {
+  opacity: 0.85;
+}
+
+.right-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.contact-link {
+  text-decoration: none;
+  font-weight: 600;
+  color: #d63384;
+}
+
+.linkedin-icon svg {
+  transition: transform 0.2s ease;
+}
+
+.linkedin-icon svg:hover {
+  transform: scale(1.1);
+}
+
+
+.header-links a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #b72a6a;
+}
+
+.project-content {
+  padding: 25px 12%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.project-content h1 {
+  font-size: 32px;
+  color: #b72a6a;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #555;
+  margin-top: -15px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #d63384;
+  margin-top: 50px;
+  font-size: 24px;
+}
+
+h4 {
+  color: #b72a6a;
+  margin-top: 25px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+.external-link {
+  color: #d63384;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.external-link:hover {
+  text-decoration: underline;
+}
+
+code {
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+.system-image-container {
+  margin-top: 20px;
+  text-align: center;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.system-image-container img {
+  width: 80%;
+  max-width: 1280px;
+  object-fit: contain;
+  transform: scale(1.32); /* Adjust zoom level here */
+  transform-origin: top;
+  transition: transform 0.3s ease;
+}
+
+.system-image-container img:hover {
+  transform: scale(1.32);
+}
+.project-tile {
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  padding: 20px;
+}
+

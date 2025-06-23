@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1024, initial-scale=0.75, maximum-scale=1, user-scalable=no" />
+  <title>Contact Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style/contact.css" />
+  <link rel="stylesheet" href="global.css">
+  <style>
+    body {
+      overscroll-behavior: none;
+    }
+
+    @media screen and (min-width: 769px) {
+      #rotate-notice,
+      .landscape-warning,
+      .portrait-warning {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="rotate-notice">
+    Please rotate your device to landscape mode to view this portfolio properly.
+  </div>
+
+  <header class="header">
+    <a href="index.html" class="logo">Harinee Anandh</a>
+    <nav class="nav">
+      <a href="projects.html" class="contact-link">My Work</a>
+      <a href="#"><img src="assets/linkedin.png" alt="LinkedIn" /></a>
+      <a href="#"><img src="assets/github.png" alt="GitHub" /></a>
+    </nav>
+  </header>
+
+  <div id="main-content">
+    <main class="contact-section">
+      <div class="contact-image">
+        <img src="assets/collaborate.png" alt="Contact Illustration"/>
+      </div>
+
+      <div class="contact-form">
+        <h2>CONTACT ME</h2>
+        <form action="https://formspree.io/f/mldbyogb" method="POST">
+          <input type="text" name="name" placeholder="Name*" required />
+          <input type="email" name="email" placeholder="Email*" required />
+          <textarea name="message" placeholder="Message*" required></textarea>
+          <input type="hidden" name="_captcha" value="true" />
+
+          <p class="captcha-note">
+            This site is protected by reCAPTCHA and the Google 
+            <a href="#">Privacy Policy</a> and 
+            <a href="#">Terms of Service</a> apply.
+          </p>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

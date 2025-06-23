@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #eaf0ff, #fde6f7);
+  background-attachment: fixed;
+  color: #d63384;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  font-weight: 500;
+}
+
+.logo {
+  font-family: 'La Belle Aurore', cursive;
+  font-size: 1.75rem;
+  font-weight:bolder;
+  color: #aa1a9b; 
+  font-weight: normal;
+  letter-spacing: 0.6px;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.logo:hover {
+  opacity: 0.85;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #b51868; 
+  font-size: 14px;
+}
+
+.nav a img {
+  width: 24px;  
+  height: 24px;
+  vertical-align: middle;
+}
+
+.hero {
+  background: rgba(242, 142, 192, 0.9);
+  text-align: center;
+  padding: 60px 20px;
+  color: white;
+  font-size: 28px;
+  font-weight: 500;
+  border-radius: 20px;
+  margin: 40px 100px;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 80px 60px;
+  flex-wrap: wrap;
+}
+
+.contact-image img {
+  max-width: 300px;
+  height: auto;
+}
+
+.contact-form {
+  max-width: 500px;
+  width: 100%;
+  background-color: rgba(244, 247, 248, 0.9); 
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.contact-form h2 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.captcha-note {
+  font-size: 11px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.captcha-note a {
+  color: #777;
+  text-decoration: underline;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #d325ad;
+  color: white;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #555;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 0;
+  background-color: #f8f8f8;
+  font-size: 14px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+}
