@@ -79,15 +79,15 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; 
   min-height: 80vh;
-  padding: 40px 10%; /* was 60px before – reduced top padding */
+  padding: 80px 8% 40px 8%;  
   gap: 30px;
   text-align: left;
   animation: fadeInUp 1.2s ease-out both;
-  margin-top: -60px;
+  margin-top: -30px;  
+  transform: translateX(-30px); 
 }
-
 
 .cloud-box {
   background-color: white;
@@ -109,19 +109,22 @@ body {
   border-radius: 1000%;
   object-fit: cover;
   border: 4px solid #d63384;
+  margin-top: 20px;
 }
 
 .intro h1 {
   font-size: 2em;
   margin: 0 0 10px;
-  color: #111; /* Darker heading */
+  color: #111; 
+  margin-top: 20px;
 }
 
 .intro p {
   max-width: 500px;
   line-height: 1.6;
   margin: 0;
-  color: #111; /* Also darkened the paragraph */
+  color: #111; 
+  margin-top: 20px;
 }
 
 /* Resume button */
