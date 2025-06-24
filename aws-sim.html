@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1024, initial-scale=0.6, maximum-scale=1, user-scalable=no" />
+  <title>AWS Solution Architect Simulation – Case Study</title>
+  <link rel="stylesheet" href="style/thoughtnest.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="global.css">
+</head>
+<body>
+  <div id="rotate-notice">
+  </div>
+  <header class="projects-header">
+    <a href="index.html" class="logo">Harinee Anandh</a>
+    <div class="right-links">
+      <a href="contact.html" class="contact-link">Contact</a>
+      <a href="https://www.linkedin.com/in/harinee-anandh-327992173/" target="_blank" class="linkedin-icon" aria-label="LinkedIn">
+        <img src="assets/linkedin.png" alt="LinkedIn" width="24" height="24" style="margin-left: 8px;" />
+      </a>
+      <a href="https://github.com/Harineeanandh" target="_blank" class="linkedin-icon" aria-label="GitHub">
+        <img src="assets/github.png" alt="GitHub" width="24" height="24" style="margin-left: 8px;" />
+      </a>
+    </div>
+  </header>
+  <div id="main-content">
+    <main class="project-content">
+      <section class="project-tile">
+        <h2>📌 AWS Solution Architect Simulation – Case Study</h2>
+        <p><strong>Platform:</strong> Forage (AWS APAC Virtual Experience Program)<br>
+        <strong>Date:</strong> May 2025<br>
+        <strong>Status:</strong> Completed<br>
+        <strong>Upcoming Certification:</strong> Preparing for AWS Certified Developer – Associate</p>
+
+        <h3>🧠 Overview</h3>
+        <p>As part of the AWS APAC Solutions Architect virtual job simulation hosted on Forage, I stepped into the role of an AWS Solutions Architect to solve a real-world client challenge. The simulation was more than just a theoretical walkthrough — it involved critical thinking, cloud design decisions, cost analysis, and client-facing communication. It was one of the most engaging and hands-on cloud projects I’ve worked on to date.</p>
+
+        <h3>📋 Client Scenario</h3>
+        <p><strong>Client:</strong> Lilly Sawyer, CTO at Fastier — a growing startup with a web application built using React (SPA frontend), Python Flask (backend), and PostgreSQL (database), all running on a single EC2 instance (t3.medium).</p>
+        <p><strong>Pain Points:</strong></p>
+        <ul>
+          <li>Server crashes and memory overload during peak traffic</li>
+          <li>Slow response times</li>
+          <li>Downtime during deployments</li>
+          <li>No disaster recovery in place</li>
+          <li>Anticipated consistent linear growth</li>
+        </ul>
+
+        <h3>🧹 My Solution</h3>
+        <p>I designed a scalable, resilient, and cost-aware AWS architecture tailored to Fastier’s needs. The solution centered around AWS Elastic Beanstalk to streamline infrastructure management, support auto-scaling, and facilitate zero-downtime deployments using blue/green deployment strategies.</p>
+
+        <h4>🔧 Architecture Components:</h4>
+        <ul>
+          <li><strong>Elastic Beanstalk:</strong> Orchestrated backend deployment using autoscaled EC2 instances.</li>
+          <li><strong>EC2:</strong> Hosted the Python Flask application with load-based scaling.</li>
+          <li><strong>RDS (PostgreSQL):</strong> Migrated their DB from a single EC2 to a fully managed and scalable RDS instance.</li>
+          <li><strong>S3:</strong> Hosted the static frontend assets (HTML, CSS, JS), enabling global access with minimal latency.</li>
+          <li><strong>Elastic Load Balancer:</strong> Distributed traffic across EC2 instances for fault tolerance and performance.</li>
+          <li><strong>Route 53:</strong> Simplified DNS management and routing.</li>
+          <li><strong>CodePipeline:</strong> Set up CI/CD pipelines to automate deployment of both frontend and backend applications.</li>
+        </ul>
+        <p>🧑‍💻 I wrote a 700-word email proposal to the CTO, breaking down the architecture, cost variability, scalability benefits, and resilience improvements — using plain, client-friendly language.</p>
+
+        <h3>📚 What I Learned Beyond the Simulation</h3>
+        <p>While the core task required designing and explaining the Elastic Beanstalk-based setup, I took the opportunity to go much deeper:</p>
+
+        <h4>🔍 Independent Exploration</h4>
+        <ul>
+          <li>Compared multiple compute solutions: Analyzed trade-offs between EC2, Lambda, Fargate, and Lightsail for different workloads and traffic patterns.</li>
+          <li>Explored multi-AZ vs single-AZ setups: Understood fault tolerance implications and the cost-benefit of regional redundancy.</li>
+          <li>Experimented with the AWS Pricing Calculator to understand how instance types, storage, and traffic affect monthly billing — an essential skill for cost optimization.</li>
+          <li>Dug into Blue/Green vs Rolling Deployments: Learned when to apply each based on application statefulness and downtime tolerance.</li>
+          <li>Reviewed VPC, Security Groups, and IAM roles to understand security best practices for a real production setup.</li>
+        </ul>
+
+        <h3>🛠️ Tools & Technologies Used</h3>
+        <ul>
+          <li>AWS Elastic Beanstalk</li>
+          <li>EC2, RDS, S3</li>
+          <li>Route 53, CodePipeline, Elastic Load Balancer</li>
+          <li>AWS Pricing Calculator</li>
+          <li>Python (Flask), React</li>
+          <li>Architecture Diagramming Tools (Draw.io, Lucidchart)</li>
+        </ul>
+
+        <h3>🌟 Why This Project Matters</h3>
+        <p>This simulation sharpened my skills not only in designing scalable and resilient architectures but also in thinking like a consultant — balancing trade-offs between performance, cost, and complexity. It tested my ability to:</p>
+        <ul>
+          <li>Explain technical decisions clearly to a non-technical client</li>
+          <li>Consider real-world deployment problems and scalability needs</li>
+          <li>Think proactively about disaster recovery and continuous delivery</li>
+        </ul>
+
+        <h3>🨾 Next Steps</h3>
+        <p>I'm currently preparing for the AWS Certified Developer – Associate exam to deepen my expertise and validate my skills in real AWS environments, with a focus on:</p>
+        <ul>
+          <li>Serverless deployment (Lambda, API Gateway)</li>
+          <li>Monitoring and logging (CloudWatch, X-Ray)</li>
+          <li>DynamoDB, IAM, Cognito</li>
+          <li>Application lifecycle and deployment strategies</li>
+        </ul>
+
+        <h3>✅ Summary</h3>
+        <p>This simulation gave me real insight into what it's like to support a startup scaling their cloud infrastructure. It was both a technical challenge and a communication exercise — and reinforced my desire to work on backend architecture, DevOps pipelines, and cloud-native applications.</p>
+        <p>📌 View the detailed architecture diagram and proposal email here: <a href="https://github.com/Harineeanandh/AWS-Solution-Architect-Simulation/" target="_blank">https://github.com/Harineeanandh/AWS-Solution-Architect-Simulation/</a></p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1024, initial-scale=0.67, maximum-scale=1, user-scalable=no" />
+  <title>Walmart Advanced Software Engineering Simulation – Case Study</title>
+  <link rel="stylesheet" href="style/thoughtnest.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="global.css">
+</head>
+<body>
+  <div id="rotate-notice">
+    Please rotate your device to landscape mode to view this portfolio properly.
+  </div>
+  <header class="projects-header">
+    <a href="index.html" class="logo">Harinee Anandh</a>
+    <div class="right-links">
+      <a href="contact.html" class="contact-link">Contact</a>
+      <a href="https://www.linkedin.com/in/harinee-anandh-327992173/" target="_blank" class="linkedin-icon" aria-label="LinkedIn">
+        <img src="assets/linkedin.png" alt="LinkedIn" width="24" height="24" style="margin-left: 8px;" />
+      </a>
+      <a href="https://github.com/Harineeanandh" target="_blank" class="linkedin-icon" aria-label="GitHub">
+        <img src="assets/github.png" alt="GitHub" width="24" height="24" style="margin-left: 8px;" />
+      </a>
+    </div>
+  </header>
+  <div id="main-content">
+    <main class="project-content">
+      <section class="project-tile">
+        <h2>📌 Walmart Advanced Software Engineering Simulation – Case Study</h2>
+        <p><strong>Platform:</strong> Forage (Walmart USA Virtual Experience Program)<br>
+        <strong>Date:</strong> May 2025<br>
+        <strong>Status:</strong> Completed</p>
+
+        <h3>🧠 Overview</h3>
+        <p>As part of Walmart’s Advanced Software Engineering virtual job simulation hosted on Forage, I took on the role of a full-stack engineer working across multiple departments — shipping, data infrastructure, and retail operations. This simulation challenged me to solve complex, multi-layered problems using real-world skills in data structures, architecture, database design, and data engineering.</p>
+
+        <h3>🧪 Task 1: Advanced Data Structures – Power-of-Two Max Heap</h3>
+        <p>The shipping department was implementing a new queuing system and needed a high-performance priority queue. I was tasked with building a custom data structure in Java — a Power-of-Two Max Heap, where each parent node had 2^k children (with k passed as a constructor parameter).</p>
+        <p>I implemented:</p>
+        <ul>
+          <li>A generalized heap structure that satisfied the heap property</li>
+          <li>Dynamic branching logic based on the configurable powerExponent</li>
+          <li>Optimized insert() and popMax() methods for time efficiency</li>
+          <li>Robust testing for edge cases with both small and large values of k</li>
+        </ul>
+        <p>💡 <strong>Takeaway:</strong> This task deepened my algorithmic thinking and challenged me to balance correctness with performance — just like real-world production systems.</p>
+
+        <h3>🧱 Task 2: Software Architecture – Dynamic Data Processor Design</h3>
+        <p>I designed a UML class diagram for a dynamically configurable data processor used by Walmart’s internal pipeline systems. The system supported:</p>
+        <ul>
+          <li>Three operating modes: dump, passthrough, and validate</li>
+          <li>Three interchangeable databases: PostgreSQL, Redis, and Elasticsearch</li>
+          <li>Run-time reconfiguration of processing mode and database backend</li>
+        </ul>
+        <p>My architecture emphasized:</p>
+        <ul>
+          <li>SOLID principles (especially Open/Closed and Dependency Inversion)</li>
+          <li>Clean abstractions using interfaces and strategy patterns</li>
+          <li>Flexibility to add new databases or modes in the future</li>
+        </ul>
+        <p>💡 <strong>Takeaway:</strong> This exercise honed my understanding of extensible software design and how to build for change — not just the current requirements.</p>
+
+        <h3>📃 Task 3: Relational Database Design – Unified Pet Product System</h3>
+        <p>I created a fully normalized Entity-Relationship Diagram (ERD) for Walmart’s pet department to consolidate three product categories (pet food, toys, apparel) under a single schema. My design accounted for:</p>
+        <ul>
+          <li>Varying attributes across product types using specialization</li>
+          <li>Many-to-many relationships between products and animals</li>
+          <li>Tracking customer info, transactions, product purchases</li>
+          <li>Shipment modeling with product-level quantities between Walmart locations</li>
+        </ul>
+        <p>💡 <strong>Takeaway:</strong> This task sharpened my ability to abstract real-world entities into clean, queryable database models — with both data integrity and scalability in mind.</p>
+
+        <h3>🐍 Task 4: Data Munging – Cross-Sheet Shipping Data Aggregation</h3>
+        <p>In the final task, I wrote a Python script to:</p>
+        <ul>
+          <li>Read messy data from three different spreadsheet schemas</li>
+          <li>Merge and transform the data into a unified format</li>
+          <li>Extract relevant fields and populate a SQLite database</li>
+          <li>Handle multi-step joins across sheets (e.g., shipment origins and destinations)</li>
+        </ul>
+        <p>The script included logic to calculate quantities per shipment, combine product and location data, and ensure consistent schema insertion. This task simulated real data wrangling done before analytics and reporting.</p>
+        <p>💡 <strong>Takeaway:</strong> I learned to reason about incomplete and scattered data sources, write robust ETL logic, and apply real-world munging patterns in Python.</p>
+
+        <h3>⚙️ Tools & Technologies Used</h3>
+        <ul>
+          <li>Java (custom heap implementation)</li>
+          <li>UML Tools (class diagrams, ERDs)</li>
+          <li>SQLite, Relational Schema Design</li>
+          <li>Python (data munging, file I/O, database population)</li>
+          <li>Design Patterns: Strategy, Factory, Open/Closed Principle</li>
+        </ul>
+
+        <h3>🨾 What I Learned</h3>
+        <p>This simulation gave me the opportunity to step into multiple engineering contexts — from backend performance optimization to architectural modeling and data migration.</p>
+        <p>I learned how to:</p>
+        <ul>
+          <li>Implement custom data structures tailored to system constraints</li>
+          <li>Architect codebases for configurability and future extensibility</li>
+          <li>Normalize complex real-world data models</li>
+          <li>Write efficient ETL pipelines in Python for messy data</li>
+        </ul>
+
+        <h3>✅ Summary</h3>
+        <p>The Walmart simulation was intense, multidisciplinary, and rewarding. It reinforced my passion for solving large-scale, data-driven problems and designing systems that work cleanly across teams and use cases. It gave me a deeper appreciation for how engineering supports operations at scale — and validated that I thrive in these environments.</p>
+        <p>📌 View my Java Heap Code, UML Diagram, ERD, and Python Script solution here: <a href="https://github.com/Harineeanandh/Walmart-SE-Simulation" target="_blank">https://github.com/Harineeanandh/Walmart-SE-Simulation</a></p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
